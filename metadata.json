@@ -1,0 +1,6 @@
+{
+  "name": "Aura Haven - Luxury Real Estate",
+  "description": "A premium luxury real estate web application featuring modern property search, interactive maps, virtual tour scheduling, property comparison, wishlist, and a comprehensive admin management dashboard.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Haven | Luxury Real Estate & Estates</title>
+    <script>
+      // Single Page App redirect for GitHub Pages custom domain subpaths
+      (function() {
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        
+        // If loaded directly from a 404 on GitHub Pages, store the original path and redirect to root
+        var redirectUrl = window.location.origin + '/' + (search ? search + '&' : '?') + 'path=' + encodeURIComponent(path) + hash;
+        
+        // If not already at root, redirect seamlessly
+        if (path !== '/' && path !== '/index.html') {
+          sessionStorage.setItem('spa_redirect_path', path);
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0F172A] text-white flex items-center justify-center min-h-screen font-sans">
+    <div id="root">
+      <div class="text-center p-8">
+        <div class="inline-block w-10 h-10 border-4 border-[#D4AF37] border-t-transparent rounded-full animate-spin mb-4"></div>
+        <p class="text-slate-300 text-sm font-medium">Loading Luxury Real Estate Experience...</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
